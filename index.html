@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Type</title>
+    <link rel="stylesheet" href="umartype2.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+    <div class="typing-container" style="margin-top: 50px;">
+        <p class="timer" id="timer">Vaqt: 0s</p>
+        
+        <!-- Matn tanlash menyusi qo‘shildi -->
+        <select id="text-select">
+            <option disabled selected>Matn tanlang</option>
+        </select>
+        
+        <div class="text-box">
+            <p class="text-display" id="text-display">Salom! Bugun qanday ishlar?</p>
+            <input type="text" id="text-input" class="text-input" placeholder="Matnni yozing...">
+        </div>
+        <p id="error-count">Xatolar: 0</p>
+    </div>
+
+    <canvas id="speedChart" width="400" height="200" style="margin-top: 50px;"></canvas>
+
+    <div class="result-container">
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">0%</span></p>
+        <p>Errors: <span id="errors">0</span></p>
+        <p>Time: <span id="time">0s</span></p>
+        <button id="finishTest">Testni tugatish</button>
+    </div>
+    
+    <script src="umartype2.js"></script>
+</body>
+</html>

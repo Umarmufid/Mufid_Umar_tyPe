@@ -1,0 +1,105 @@
+body {
+    margin: 50;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #046c89, #0f5b2b, #7c077c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.typing-container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.text-box {
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.text-display {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+
+.timer {
+    height: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text-display {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.text-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.result-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.result-container {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0; /* Ekranning eng chap tomoniga qo‘yadi */
+    margin-left: 20px; /* Agar ekrandan biroz ichkariga olish kerak bo‘lsa */
+}
+
+canvas {
+    display: block;
+    margin: 0px auto;
+}
+
+#finishTest {
+    position: relative;
+    margin-top: 10px; /* Tugmani pastga tushirish */
+    background: rgba(0, 0, 0, 0.9); /* Tugma fondini ajratish uchun */
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Katta blok ichida joylashuvni to'g'ri qilish */
+    text-align: center;
+}
+
+#finishTest:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
